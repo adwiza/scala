@@ -36,7 +36,7 @@ object Main extends App {
   })
 // Построение рекомендаций с ALS
   val rank = 10
-  val numIterations = 20
+  var numIterations = 20
   val model = ALS.train(ratings, rank, numIterations, 0.01)
 
 // Проверка работы на рейтингах

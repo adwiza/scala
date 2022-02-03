@@ -6,7 +6,7 @@ object rec extends App {
 
 
   val conf = new SparkConf()
-    .setAppName("Simple Application")
+    .setAppName("MovieLens recommendation system")
     .setMaster("local[*]")
 
   val sc = new SparkContext(conf)
