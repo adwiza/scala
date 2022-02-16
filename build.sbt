@@ -8,5 +8,6 @@ val sparkVer = "3.2.1"
 libraryDependencies ++= Seq(
 "org.apache.spark" % "spark-sql_2.12" % "2.4.6" % Provided,
 "org.apache.spark" % "spark-mllib_2.12" % "3.2.1",
-"com.esotericsoftware" % "kryo" % "5.2.1"
+"com.esotericsoftware" % "kryo" % "5.2.1",
+"ml.dmlc" % "xgboost4j-spark_2.12" % "1.5.2"
 )
