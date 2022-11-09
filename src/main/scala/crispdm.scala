@@ -1,3 +1,4 @@
+import org.apache.spark.ml.feature.Intercept
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types._
@@ -65,5 +66,118 @@ object crispdm extends App {
 
   val data = df0.unionAll(df1Over)
   data.groupBy("target").count().show()
+//  # Рабрта с признаками
+//  Проверяем корреляции чисовых признаков
+  val pairs = numericColumns
+  .flatMap(f1 => numericColumns.map(f2 => (f1, f2)))
+  .filter { p => !p._1.equals(p._2) }
+  .map { p => if (p._1 < p._2) (p._1, p._2) else (p._2, p._1) }
+  .distinct
+
+  val corr = pairs
+    .map { p => (p._1, p._2, data.stat.corr(p._1, p._2)) }
+    .filter(_._3 > .6)
+
+  corr.sortBy(_._3).reverse.foreach { c => println(f"${c._1}%25s${c._2}%25s\t${c._3}") }
+  var numericColumnsFinal = numericColumns.diff(corr.map(_._2))
+  println(numericColumnsFinal)
+
+//  Категориальные признаки
+//  Индексируем строковые колонки
+   import org.apache.spark.ml.feature.StringIndexer
+
+  val stringColumns = data
+    .dtypes
+    .filter(_._2.equals("StringType"))
+    .map(_._1)
+    .filter(!_.equals("Attrition_Flag"))
+
+  val stringColumnsIndexed = stringColumns.map(_ + "_Indexed")
+  val indexer = new StringIndexer()
+    .setInputCols(stringColumns)
+    .setOutputCols(stringColumnsIndexed)
+
+  val indexed = indexer.fit(data).transform(data)
+  indexed.show(5 )
+
+//  Кодируем категориальные признаки
+  import org.apache.spark.ml.feature.OneHotEncoder
+
+  val catColumns = stringColumnsIndexed.map(_ + "_Coded")
+  val encoder = new OneHotEncoder()
+    .setInputCols(stringColumnsIndexed)
+    .setOutputCols(catColumns)
+
+  val encoded = encoder.fit(indexed).transform(indexed)
+  encoded.show(5)
+//  Собираем признаки в вектор
+  import org.apache.spark.ml.feature.VectorAssembler
+
+  val featureColumns = numericColumnsFinal ++ catColumns
+
+  val assembler = new VectorAssembler()
+    .setInputCols(featureColumns)
+    .setOutputCol("features")
+
+  val assembled = assembler.transform(encoded)
+  assembled.show(5, truncate = false)
+
+//  Нормализация
+  import org.apache.spark.ml.feature.MinMaxScaler
+
+  val scaler = new MinMaxScaler()
+    .setInputCol("features")
+    .setOutputCol("scaledFeatures")
+
+  val scaled = scaler.fit(assembled).transform(assembled)
+  scaled.show(5, truncate = false)
+//  Feature Selection (Отбор признаков)
+  import org.apache.spark.ml.feature.ChiSqSelector
+
+  val selector = new ChiSqSelector()
+    .setNumTopFeatures(10)
+    .setFeaturesCol("scaledFeatures")
+    .setLabelCol("target")
+    .setOutputCol("selectedFeatures")
+  val dataF = selector.fit(scaled).transform(scaled)
+  dataF.show(5, truncate = false)
+
+//  Моделирование
+//  Обучающая и тестовая выборки
+
+  val tt = dataF.randomSplit(Array(.7, .3))
+  val training = tt(0)
+  val test = tt(1)
+
+  println(s"training\t${training.count()}\ntest\t${test.count()}")
+//  Логистическая регрессия
+  import org.apache.spark.ml.classification.LogisticRegression
+
+  val lr = new LogisticRegression()
+    .setMaxIter(1000)
+    .setRegParam(.2)
+    .setElasticNetParam(.8)
+    .setFeaturesCol("selectedFeatures")
+    .setLabelCol("target")
+
+  val lrModel = lr.fit(training)
+
+  println(s"Coefficients: ${lrModel.coefficients} Intercept: ${lrModel.intercept}")
+
+//  Training Summary
+
+  val trainingSummary = lrModel.binarySummary
+  println(s"accuracy: ${trainingSummary.accuracy}")
+  println(s"areaUnderROC: ${trainingSummary.areaUnderROC}")
+
+//  Проверяем модель на тестовой выборке
+  val predicted = lrModel.transform(test)
+  predicted.select("target", "rawPrediction", "probability", "prediction")
+    .show(10, truncate=false)
+
+  import org.apache.spark.ml.evaluation.BinaryClassificationEvaluator
+
+  val evaluator = new BinaryClassificationEvaluator().setLabelCol("target")
+  println(s"areaUnderROC: ${evaluator.evaluate(predicted)}\n")
 }
 

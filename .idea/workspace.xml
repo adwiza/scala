@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07fde79d-43d9-4a32-9a91-635d65890175" name="Changes" comment="init commit">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="07fde79d-43d9-4a32-9a91-635d65890175" name="Changes" comment="data prepared by oversampling">
+      <change beforePath="$PROJECT_DIR$/.idea/modules/crispdm-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/crispdm-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/crispdm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/crispdm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/crispdm.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/crispdm.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667893685832</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="data prepared by oversampling">
+      <created>1667967557091</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667967557092</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,7 +121,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="data prepared by oversampling" />
+    <option name="LAST_COMMIT_MESSAGE" value="data prepared by oversampling" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
