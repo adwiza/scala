@@ -179,5 +179,18 @@ object crispdm extends App {
 
   val evaluator = new BinaryClassificationEvaluator().setLabelCol("target")
   println(s"areaUnderROC: ${evaluator.evaluate(predicted)}\n")
+
+//  Confusion Matrix (матрица ошибок)
+// TP - true positive
+// TN - true negative
+// FP - false positive
+// FN - false negative
+
+  val tp = predicted.filter(($"target" === 1) and ($"prediction") === 1).count()
+  val tn = predicted.filter(($"target" === 0) and ($"prediction") === 0).count()
+  val fp = predicted.filter(($"target" === 0) and ($"prediction") === 1).count()
+  val fn = predicted.filter(($"target" === 1) and ($"prediction") === 0).count()
+
+  println(s"Confusion Matrix:\n$tp\t$fp\n$fn\t$tn\n")
 }
 
