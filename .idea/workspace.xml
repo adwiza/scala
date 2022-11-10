@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07fde79d-43d9-4a32-9a91-635d65890175" name="Changes" comment="confusion matrix added">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/crispdmProd.scala" afterDir="false" />
+    <list default="true" id="07fde79d-43d9-4a32-9a91-635d65890175" name="Changes" comment="model research finished">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/crispdm.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/crispdm.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667975104362</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="model research finished">
+      <created>1668053785155</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668053785155</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,7 +141,8 @@
     <MESSAGE value="data prepared by oversampling" />
     <MESSAGE value="check model" />
     <MESSAGE value="confusion matrix added" />
-    <option name="LAST_COMMIT_MESSAGE" value="confusion matrix added" />
+    <MESSAGE value="model research finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="model research finished" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
