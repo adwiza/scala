@@ -5,54 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07fde79d-43d9-4a32-9a91-635d65890175" name="Changes" comment="Prod model finished">
-      <change afterPath="$PROJECT_DIR$/pipelineModel/metadata/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/metadata/.part-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/metadata/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/metadata/part-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/0_strIdx_aaf8918b9440/data/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/0_strIdx_aaf8918b9440/data/.part-00000-0c7acc81-80e1-4e4d-a6b7-45a18a50fe30-c000.snappy.parquet.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/0_strIdx_aaf8918b9440/data/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/0_strIdx_aaf8918b9440/data/part-00000-0c7acc81-80e1-4e4d-a6b7-45a18a50fe30-c000.snappy.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/0_strIdx_aaf8918b9440/metadata/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/0_strIdx_aaf8918b9440/metadata/.part-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/0_strIdx_aaf8918b9440/metadata/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/0_strIdx_aaf8918b9440/metadata/part-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/1_oneHotEncoder_156489e08823/data/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/1_oneHotEncoder_156489e08823/data/.part-00000-7d34eb96-9233-4fa0-9a4b-4baa4d3c13c5-c000.snappy.parquet.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/1_oneHotEncoder_156489e08823/data/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/1_oneHotEncoder_156489e08823/data/part-00000-7d34eb96-9233-4fa0-9a4b-4baa4d3c13c5-c000.snappy.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/1_oneHotEncoder_156489e08823/metadata/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/1_oneHotEncoder_156489e08823/metadata/.part-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/1_oneHotEncoder_156489e08823/metadata/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/1_oneHotEncoder_156489e08823/metadata/part-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/2_vecAssembler_0c294865005e/metadata/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/2_vecAssembler_0c294865005e/metadata/.part-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/2_vecAssembler_0c294865005e/metadata/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/2_vecAssembler_0c294865005e/metadata/part-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/3_minMaxScal_9e5d76ffa91c/data/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/3_minMaxScal_9e5d76ffa91c/data/.part-00000-f5cc3a2c-afe6-4f1c-b66c-c5f0b33b1139-c000.snappy.parquet.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/3_minMaxScal_9e5d76ffa91c/data/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/3_minMaxScal_9e5d76ffa91c/data/part-00000-f5cc3a2c-afe6-4f1c-b66c-c5f0b33b1139-c000.snappy.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/3_minMaxScal_9e5d76ffa91c/metadata/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/3_minMaxScal_9e5d76ffa91c/metadata/.part-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/3_minMaxScal_9e5d76ffa91c/metadata/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/3_minMaxScal_9e5d76ffa91c/metadata/part-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/4_chiSqSelector_b438bda0f325/data/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/4_chiSqSelector_b438bda0f325/data/.part-00000-24f975c7-1e90-4d50-8328-e664852ed483-c000.snappy.parquet.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/4_chiSqSelector_b438bda0f325/data/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/4_chiSqSelector_b438bda0f325/data/part-00000-24f975c7-1e90-4d50-8328-e664852ed483-c000.snappy.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/4_chiSqSelector_b438bda0f325/metadata/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/4_chiSqSelector_b438bda0f325/metadata/.part-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/4_chiSqSelector_b438bda0f325/metadata/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/4_chiSqSelector_b438bda0f325/metadata/part-00000" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/5_logreg_d7d789b5fcbe/data/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/5_logreg_d7d789b5fcbe/data/.part-00000-b3566bda-13b2-4e3c-b2f8-620a64f5ea3f-c000.snappy.parquet.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/5_logreg_d7d789b5fcbe/data/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/5_logreg_d7d789b5fcbe/data/part-00000-b3566bda-13b2-4e3c-b2f8-620a64f5ea3f-c000.snappy.parquet" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/5_logreg_d7d789b5fcbe/metadata/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/5_logreg_d7d789b5fcbe/metadata/.part-00000.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/5_logreg_d7d789b5fcbe/metadata/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/5_logreg_d7d789b5fcbe/metadata/part-00000" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/crispdmProd.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/crispdmProd.scala" afterDir="false" />
     </list>
@@ -117,6 +69,7 @@
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="learn.sparkml.crispdmProd" />
       <module name="crispdm" />
+      <option name="PROGRAM_PARAMETERS" value=" $PROJECT_DIR$/pipelineModel $PROJECT_DIR$/BankChurners-1801-1d994f.csv $PROJECT_DIR$/prediction " />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="learn.sparkml.*" />
@@ -213,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668057675991</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Prod model finished">
+      <created>1668060344922</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668060344922</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -12,6 +12,7 @@ object crispdmProd {
 
     val spark = SparkSession.builder
       .appName("crispdmProd")
+      .master("local[*]")
       .config("spark.sql.debug.maxToStringFields", 100)
       .getOrCreate()
 
