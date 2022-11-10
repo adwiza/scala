@@ -10,8 +10,7 @@ object crispdmProd {
       sys.exit(-1)
     }
 
-    val spark = SparkSession
-      .builder()
+    val spark = SparkSession.builder
       .appName("crispdmProd")
       .config("spark.sql.debug.maxToStringFields", 100)
       .getOrCreate()
@@ -19,18 +18,14 @@ object crispdmProd {
     import spark.implicits._
 
     try {
+
       val model = PipelineModel.load(args(0))
-      //  Load data
-      val data = spark
-        .read
+
+      val data = spark.read
         .option("header", "true")
         .option("inferSchema", "true")
         .csv(args(1))
 
-      //  Load model
-      import org.apache.spark.ml.PipelineModel
-
-      // Calculating
       val prediction = model.transform(data)
 
       prediction

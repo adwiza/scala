@@ -4,7 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07fde79d-43d9-4a32-9a91-635d65890175" name="Changes" comment="model research finished">
+    <list default="true" id="07fde79d-43d9-4a32-9a91-635d65890175" name="Changes" comment="Prod model finished">
+      <change afterPath="$PROJECT_DIR$/pipelineModel/metadata/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/metadata/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/metadata/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/metadata/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/0_strIdx_aaf8918b9440/data/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/0_strIdx_aaf8918b9440/data/.part-00000-0c7acc81-80e1-4e4d-a6b7-45a18a50fe30-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/0_strIdx_aaf8918b9440/data/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/0_strIdx_aaf8918b9440/data/part-00000-0c7acc81-80e1-4e4d-a6b7-45a18a50fe30-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/0_strIdx_aaf8918b9440/metadata/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/0_strIdx_aaf8918b9440/metadata/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/0_strIdx_aaf8918b9440/metadata/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/0_strIdx_aaf8918b9440/metadata/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/1_oneHotEncoder_156489e08823/data/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/1_oneHotEncoder_156489e08823/data/.part-00000-7d34eb96-9233-4fa0-9a4b-4baa4d3c13c5-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/1_oneHotEncoder_156489e08823/data/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/1_oneHotEncoder_156489e08823/data/part-00000-7d34eb96-9233-4fa0-9a4b-4baa4d3c13c5-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/1_oneHotEncoder_156489e08823/metadata/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/1_oneHotEncoder_156489e08823/metadata/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/1_oneHotEncoder_156489e08823/metadata/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/1_oneHotEncoder_156489e08823/metadata/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/2_vecAssembler_0c294865005e/metadata/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/2_vecAssembler_0c294865005e/metadata/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/2_vecAssembler_0c294865005e/metadata/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/2_vecAssembler_0c294865005e/metadata/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/3_minMaxScal_9e5d76ffa91c/data/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/3_minMaxScal_9e5d76ffa91c/data/.part-00000-f5cc3a2c-afe6-4f1c-b66c-c5f0b33b1139-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/3_minMaxScal_9e5d76ffa91c/data/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/3_minMaxScal_9e5d76ffa91c/data/part-00000-f5cc3a2c-afe6-4f1c-b66c-c5f0b33b1139-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/3_minMaxScal_9e5d76ffa91c/metadata/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/3_minMaxScal_9e5d76ffa91c/metadata/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/3_minMaxScal_9e5d76ffa91c/metadata/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/3_minMaxScal_9e5d76ffa91c/metadata/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/4_chiSqSelector_b438bda0f325/data/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/4_chiSqSelector_b438bda0f325/data/.part-00000-24f975c7-1e90-4d50-8328-e664852ed483-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/4_chiSqSelector_b438bda0f325/data/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/4_chiSqSelector_b438bda0f325/data/part-00000-24f975c7-1e90-4d50-8328-e664852ed483-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/4_chiSqSelector_b438bda0f325/metadata/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/4_chiSqSelector_b438bda0f325/metadata/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/4_chiSqSelector_b438bda0f325/metadata/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/4_chiSqSelector_b438bda0f325/metadata/part-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/5_logreg_d7d789b5fcbe/data/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/5_logreg_d7d789b5fcbe/data/.part-00000-b3566bda-13b2-4e3c-b2f8-620a64f5ea3f-c000.snappy.parquet.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/5_logreg_d7d789b5fcbe/data/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/5_logreg_d7d789b5fcbe/data/part-00000-b3566bda-13b2-4e3c-b2f8-620a64f5ea3f-c000.snappy.parquet" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/5_logreg_d7d789b5fcbe/metadata/._SUCCESS.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/5_logreg_d7d789b5fcbe/metadata/.part-00000.crc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/5_logreg_d7d789b5fcbe/metadata/_SUCCESS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelineModel/stages/5_logreg_d7d789b5fcbe/metadata/part-00000" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/crispdmProd.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/crispdmProd.scala" afterDir="false" />
     </list>
@@ -31,29 +79,33 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2HFckcLetc7nXduEQ0VUy2D8SyK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;scala_project_settings_configurable.last_selected_tab_index&quot;: &quot;6&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;sbt.project.settings.configurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "scala_project_settings_configurable.last_selected_tab_index": "6",
+    "settings.editor.selected.configurable": "sbt.project.settings.configurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/project" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.crispdmProd">
     <configuration name="crispdm" type="Application" factoryName="Application" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="/Library/Java/JavaVirtualMachines/openjdk11/Contents/Home" />
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="crispdm" />
       <module name="crispdm" />
@@ -61,8 +113,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="crispdmProd" type="Application" factoryName="Application" temporary="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="learn.sparkml.crispdmProd" />
+      <module name="crispdm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learn.sparkml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.crispdmProd" />
+      <item itemvalue="Application.crispdm" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.crispdmProd" />
         <item itemvalue="Application.crispdm" />
       </list>
     </recent_temporary>
@@ -135,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668054850934</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Prod model finished">
+      <created>1668057675991</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668057675991</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,12 +228,14 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init commit" />
     <MESSAGE value="data prepared by oversampling" />
     <MESSAGE value="check model" />
     <MESSAGE value="confusion matrix added" />
     <MESSAGE value="model research finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="model research finished" />
+    <MESSAGE value="Prod model finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prod model finished" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
