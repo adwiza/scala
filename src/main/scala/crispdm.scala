@@ -192,5 +192,68 @@ object crispdm extends App {
   val fn = predicted.filter(($"target" === 1) and ($"prediction") === 0).count()
 
   println(s"Confusion Matrix:\n$tp\t$fp\n$fn\t$tn\n")
+
+//  Accuracy, Precision, Recall
+  val accuracy = (tp + tn) / (tp + tn + fp + fn).toDouble
+  val precision = tp / (tp + fp).toDouble
+  val recall = tp / (tp + fn).toDouble
+
+  println(s"Accuracy = $accuracy")
+  println(s"Precision = $precision")
+  println(s"Recall = $recall")
+
+//  Настаиваем модель, подбираем гиперпараметры
+
+  import org.apache.spark.ml.tuning.{ParamGridBuilder, TrainValidationSplit}
+
+  val paramGrid = new ParamGridBuilder()
+    .addGrid(lr.regParam, Array(.01, .1, .5))
+    .addGrid(lr.fitIntercept)
+    .addGrid(lr.elasticNetParam, Array(.0, .5, 1.0))
+    .build()
+
+  val trainValidationSplit = new TrainValidationSplit()
+    .setEstimator(lr)
+    .setEvaluator(evaluator)
+    .setEstimatorParamMaps(paramGrid)
+    .setTrainRatio(.7)
+    .setParallelism(2)
+
+  val model = trainValidationSplit.fit(dataF)
+
+  model.bestModel.extractParamMap()
+
+  val bestML = model.bestModel
+  /*
+  val bestML = new LogisticRegression()
+          .setMaxIter(1000)
+          .setRegParam(.01)
+          .setElasticNetParam(.0)
+          .setFeaturesCol("selectedFeatures")
+          .setLabelCol("target")
+   */
+//  Собираем все вместе (Pipeline)
+    /*
+    1. Отобрали числовые признаки: NumericColumnsFinal
+    2. Проиндексировали строковые призкаки: indexer
+    3. Закодировали категориальные признаки: encoder
+    4. Собрали признаки в вектор: assembler
+    5. Нормализовали признаки: scaler
+    6. Провели отбор признаков: selector
+    7. Рассчитали модель: bestML
+    */
+   import org.apache.spark.ml.Pipeline
+
+  val pipeline = new Pipeline().setStages(Array(indexer, encoder, assembler, scaler, selector, bestML))
+
+  val ttData = data.randomSplit(Array(.7, .3))
+  val trainingData = ttData(0)
+  val testData = ttData(1)
+
+  val pipelineModel = pipeline.fit(trainingData)
+
+//  Сохраняем модель
+  pipelineModel.write.overwrite().save("/Users/adwiz/IdeaProjects/crispdm/pipelineModel")
+
 }
 
