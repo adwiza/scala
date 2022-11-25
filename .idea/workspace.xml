@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07fde79d-43d9-4a32-9a91-635d65890175" name="Changes" comment="Prod model finished">
-      <change afterPath="$PROJECT_DIR$/prediction/._SUCCESS.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prediction/.part-00000-9bc85dd6-5ea7-459c-927b-3a9623e0c2e3-c000.csv.crc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prediction/_SUCCESS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prediction/part-00000-9bc85dd6-5ea7-459c-927b-3a9623e0c2e3-c000.csv" afterDir="false" />
+    <list default="true" id="07fde79d-43d9-4a32-9a91-635d65890175" name="Changes" comment="build.sbt changed">
+      <change beforePath="$PROJECT_DIR$/.idea/modules/crispdm-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/crispdm-build.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
     </list>
@@ -46,6 +43,8 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;true&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -183,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668060977424</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="build.sbt changed">
+      <created>1668422142273</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668422142274</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,7 +211,8 @@
     <MESSAGE value="confusion matrix added" />
     <MESSAGE value="model research finished" />
     <MESSAGE value="Prod model finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prod model finished" />
+    <MESSAGE value="build.sbt changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="build.sbt changed" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
